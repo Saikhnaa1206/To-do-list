@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://cdn.prod.website-files.com/634681057b887c6f4830fae2/6367ddb8321d97ae5941c392_6259f7be00a32515812b1ac8_how_to_be_productive.png");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  padding-top: 24px;
+  background-color: white;
+  border-radius: 16px;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2%;
+}
+.input {
+  width: 60%;
+  outline: none;
+}
+.buttonAdd {
+  width: 10%;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 5px;
+}
+.todo {
+  width: 72%;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.todolist {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.edit {
+  width: 48px;
+  height: 24px;
+}
+.dlt {
+  width: 48px;
+  height: 24px;
+}
+.editor {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 12px;
+}
+.stylee {
+  width: 100%;
+  height: 36px;
+  background-color: cornflowerblue;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.text {
+  height: 100%;
+  display: flex;
+  padding-left: 12px;
+  align-items: center;
+}
+.dateContainer {
+  height: 100%;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  align-items: center;
+}
+.done {
+  width: 48px;
+  height: 24px;
+}
