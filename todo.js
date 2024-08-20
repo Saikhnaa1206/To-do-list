@@ -1,4 +1,6 @@
+const localName = localStorage.getItem("name");
 const input = document.getElementsByClassName("input")[0];
+input.placeholder = localName + "'s to-do list";
 const buttonAdd = document.getElementsByClassName("buttonAdd")[0];
 let todolist = document.getElementsByClassName("todolist")[0];
 let containerDone = document.createElement("div");

@@ -1,3 +1,4 @@
+const userName = document.getElementById("user-name");
 const email = document.getElementById("email");
 const number = document.getElementById("number");
 const password = document.getElementById("password");
@@ -7,6 +8,13 @@ const alphabet = "qwertyuiopasdfghjklzxcvbnm";
 const too = "0123456789";
 let num = 0;
 let valid = 0;
+function validName() {
+  const nameValue = userName.value;
+  if (nameValue == "") {
+  } else {
+    valid++;
+  }
+}
 function validEmail() {
   const value = email.value;
   if (value.includes("@")) {
@@ -58,15 +66,22 @@ function validPass() {
   //   alert("password is wrong");
   // }
 }
+console.log(valid);
 function workk() {
+  validName();
   validEmail();
   validPhone();
   validPass();
-  if (valid == 3) {
+  if (valid == 4) {
+    localStorage.setItem("name", userName.value);
     window.location.href = "todo.html";
   }
+  valid = 0;
 }
-submit.onclick = workk;
+
+submit.addEventListener("click", function () {
+  workk();
+});
 let numberPass = 0;
 function pass() {
   if (numberPass % 2 == 0) {
