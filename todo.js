@@ -53,13 +53,14 @@ function create() {
       todo.remove();
     });
     done.addEventListener("click", function () {
-      if (styleDiv.childElementCount == 4) {
+      if (todo.childElementCount == 2) {
         alert("edit is working");
       } else {
         containerDone.appendChild(todo);
         editor.remove();
       }
     });
+    console.log(styleDiv.childElementCount);
     edit.addEventListener("click", function () {
       // const editedText = prompt("editlesen zuilee oruulna uu", text.innerText);
       // text.innerText = editedText;
@@ -72,7 +73,7 @@ function create() {
       roww.appendChild(doneButton);
       todo.appendChild(roww);
       editInput.value = text.innerHTML;
-
+      console.log(styleDiv.childElementCount);
       doneButton.addEventListener("click", function () {
         if (editInput.value == "") {
           alert("Empty");
@@ -81,6 +82,7 @@ function create() {
           editInput.style.display = "none";
           doneButton.style.display = "none";
           edit.style.pointerEvents = "auto";
+          roww.remove();
         }
       });
     });
