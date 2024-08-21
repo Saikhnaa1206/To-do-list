@@ -80,9 +80,9 @@ submit.addEventListener("click", function () {
 let numberPass = 0;
 function pass() {
   if (numberPass % 2 == 0) {
-    password.type = "password";
-  } else {
     password.type = "text";
+  } else {
+    password.type = "password";
   }
   numberPass++;
 }

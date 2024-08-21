@@ -4,6 +4,7 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -30,9 +31,26 @@ body {
   color: cornflowerblue;
   font-weight: 600;
 }
-button {
-  color: cornflowerblue;
-}
 #submit {
   width: 64px;
+  color: cornflowerblue;
+}
+.pass {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  width: 80%;
+}
+input {
+  width: 80%;
+}
+#eye {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/6405/6405909.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  border: none;
+  height: 22px;
 }
