@@ -11,6 +11,7 @@ let valid = 0;
 function validName() {
   const nameValue = userName.value;
   if (nameValue == "") {
+    alert("name is wrong");
   } else {
     valid++;
   }
@@ -18,12 +19,10 @@ function validName() {
 function validEmail() {
   const value = email.value;
   if (value.includes("@")) {
-    // alert("email is correct");
     valid++;
+  } else {
+    alert("email is wrong");
   }
-  // else {
-  //   alert("email is wrong");
-  // }
 }
 function validPhone() {
   const phoneNumber = number.value;
@@ -33,12 +32,10 @@ function validPhone() {
     }
   }
   if (num == 0 && phoneNumber.length == 8) {
-    // alert("phone number is correct");
     valid++;
+  } else {
+    alert("phone number is wrong");
   }
-  // else {
-  //   alert("phone number is wrong");
-  // }
 }
 function validPass() {
   const passwordValue = password.value;
@@ -59,12 +56,10 @@ function validPass() {
     }
   }
   if (num1 === 3) {
-    // alert("password is correct");
     valid++;
+  } else {
+    alert("password is wrong");
   }
-  // else {
-  //   alert("password is wrong");
-  // }
 }
 console.log(valid);
 function workk() {
