@@ -53,8 +53,12 @@ function create() {
       todo.remove();
     });
     done.addEventListener("click", function () {
-      containerDone.appendChild(todo);
-      editor.remove();
+      if (styleDiv.childElementCount == 4) {
+        alert("edit is working");
+      } else {
+        containerDone.appendChild(todo);
+        editor.remove();
+      }
     });
     edit.addEventListener("click", function () {
       // const editedText = prompt("editlesen zuilee oruulna uu", text.innerText);
