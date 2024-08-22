@@ -67,8 +67,10 @@ function create() {
       // const editedText = prompt("editlesen zuilee oruulna uu", text.innerText);
       // text.innerText = editedText;
       const roww = document.createElement("div");
+      roww.className = "editEditor";
       edit.style.pointerEvents = "none";
       const editInput = document.createElement("input");
+      editInput.className = "editInput";
       roww.appendChild(editInput);
       const doneButton = document.createElement("button");
       doneButton.innerHTML = "done";

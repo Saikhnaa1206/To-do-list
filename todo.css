@@ -32,7 +32,7 @@ body {
 #name {
   font-size: 48px;
   font-weight: 700;
-  color: #b6d0e2;
+  color: #7cb9e8;
 }
 .row {
   display: flex;
@@ -114,8 +114,18 @@ body {
   height: 24px;
 }
 button {
-  background-color: #b6d0e2;
+  background-color: #a7c7e7;
   outline: none;
   border: none;
-  border-radius: 6px;
+  border-radius: 3px;
+}
+.editInput {
+  outline: none;
+  border-radius: 8px;
+}
+.editEditor {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  justify-content: center;
 }
